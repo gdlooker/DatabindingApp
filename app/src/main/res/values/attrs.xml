@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FontSizeView">
+        <attr name="lineWidth" format="dimension|reference" />
+        <attr name="lineColor" format="color|reference" />
+        <attr name="totalCount" format="integer" />
+        <attr name="circleColor" format="color|reference" />
+        <attr name="circleRadius" format="dimension|reference" />
+
+        <attr name="textFontColor" format="color|reference" />
+        <attr name="smallSize" format="integer" />
+        <attr name="standerSize" format="integer" />
+        <attr name="bigSize" format="integer" />
+        <attr name="defaultPosition" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CircularProgressView">
+        <attr name="backWidth" format="dimension" />    <!--背景圆环宽度-->
+        <attr name="progWidth" format="dimension" />    <!--进度圆环宽度-->
+        <attr name="backColor" format="color" />        <!--背景圆环颜色-->
+        <attr name="progColor" format="color" />        <!--进度圆环颜色-->
+        <attr name="progStartColor" format="color" />   <!--进度圆环开始颜色-->
+        <attr name="progFirstColor" format="color" />   <!--进度圆环结束颜色-->
+        <attr name="progress" format="integer" />       <!--圆环进度-->
+    </declare-styleable>
+
+    <declare-styleable name="RadiusCardView">
+        <!--        左上圆角大小-->
+        <attr name="rcv_topLeftRadiu" format="dimension" />
+        <!--        右上圆角大小-->
+        <attr name="rcv_topRightRadiu" format="dimension" />
+        <!--        右下圆角大小-->
+        <attr name="rcv_bottomRightRadiu" format="dimension" />
+        <!--        左下圆角大小-->
+        <attr name="rcv_bottomLeftRadiu" format="dimension" />
+    </declare-styleable>
+
+    <style name="DialogBottomAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/common_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/common_out_bottom</item>
+    </style>
+
+    <style name="DialogTopAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/common_in_top</item>
+        <item name="android:windowExitAnimation">@anim/common_out_top</item>
+    </style>
+
+    <style name="ChatDialogScaleAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/common_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/common_out_bottom_550</item>
+    </style>
+
+    <style name="DialogHorizontalAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/horizontal_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/horizontal_out_anim</item>
+    </style>
+
+    <style name="DialogStyle" parent="@style/Theme.AppCompat.Light.Dialog">
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="DialogStyleTrans" parent="@style/Theme.AppCompat.Light.Dialog">
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--        <item name="android:colorBackground">@android:color/transparent</item>-->
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+        <item name="android:windowIsTranslucent">true</item><!--半透明-->
+        <!--        <item name="android:windowContentOverlay">@null</item>-->
+        <!--        &lt;!&ndash; 浮于Activity之上 &ndash;&gt;-->
+        <!--        <item name="android:windowIsFloating">true</item>-->
+        <!--        &lt;!&ndash; 边框 &ndash;&gt;-->
+        <!--        <item name="android:windowFrame">@null</item>-->
+        <!--        &lt;!&ndash; 无标题 &ndash;&gt;-->
+        <!--        <item name="android:windowNoTitle">true</item>-->
+    </style>
+
+    <style name="DialogStyleWithBg" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="android:backgroundDimEnabled">true</item><!--模糊-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+    </style>
+
+    <style name="FullScreenDialogStyle" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <!--<item name="android:windowFrame">@null</item>-->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <!--        指示这是否为浮动窗口的标志。-->
+        <!--        <item name="android:windowIsFloating">false</item>-->
+        <!--        背景是否变暗-->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!--    指示这是否是半透明窗口的标志。 如果未设置此属性（但
+               如果设置为false，则为not），如果
+               windowSwipeToDismiss设置为true。 -->
+        <!--        <item name="android:windowIsTranslucent">false</item>-->
+        <item name="android:windowFrame">@null</item>
+
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <declare-styleable name="LikeButton">
+        <attr name="icon_size" format="dimension|reference" />
+        <attr name="like_drawable" format="reference" />
+        <attr name="unlike_drawable" format="reference" />
+        <attr name="dots_primary_color" format="color|reference" />
+        <attr name="dots_secondary_color" format="color|reference" />
+        <attr name="circle_start_color" format="color|reference" />
+        <attr name="circle_end_color" format="color|reference" />
+        <attr name="init_status" format="boolean" />
+        <attr name="is_enabled" format="boolean" />
+        <attr name="anim_scale_factor" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="PlazaLikeButton">
+        <attr name="anim_cancel" format="string" />
+        <attr name="anim_confirm" format="string" />
+    </declare-styleable>
+
+    <!-- KsgLikeView-->
+    <declare-styleable name="KsgLikeView">
+        <!-- 进入动画 时长-->
+        <attr name="ksg_enter_duration" format="integer" />
+        <!--路径动画 时长-->
+        <attr name="ksg_curve_duration" format="integer" />
+
+        <attr name="ksg_anim_json" format="string" />
+        <attr name="ksg_icon_size" format="dimension|reference" />
+        <attr name="ksg_bubble_size" format="dimension|reference" />
+        <attr name="parent_with" format="dimension|reference" />
+        <attr name="parent_height" format="dimension|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="common_headBarLayout">
+        <!--样式-->
+        <attr name="common_style">
+            <flag name="light" value="1" />
+            <flag name="dark" value="2" />
+        </attr>
+        <attr name="common_leftShow" format="boolean" />
+        <attr name="common_contentText" format="string" />
+        <attr name="common_rightImage" format="reference" />
+        <attr name="common_rightText" format="string" />
+        <attr name="common_shapeRightText" format="string" />
+        <attr name="common_hbl_lineHeight" format="dimension" />
+        <attr name="common_hbl_lineColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="Common_MenuItemLayout">
+        <!-- 菜单条目 -->
+        <attr name="common_menu_item_Length" format="dimension" />
+        <attr name="common_itemPadding" format="dimension" />
+        <attr name="common_itemPaddingLeft" format="dimension" />
+        <attr name="common_itemPaddingRight" format="dimension" />
+        <attr name="common_itemPaddingTop" format="dimension" />
+        <attr name="common_itemPaddingBottom" format="dimension" />
+
+        <attr name="common_topSpaceColor" format="reference|color" />
+        <attr name="common_topSpaceHeight" format="dimension" />
+        <attr name="common_bottomSpaceColor" format="reference|color" />
+        <attr name="common_bottomSpaceHeight" format="dimension" />
+        <attr name="common_startIcon" format="reference" />
+        <attr name="common_startIconPadding" format="dimension" />
+        <attr name="common_startIconPaddingLeft" format="dimension" />
+        <attr name="common_startIconPaddingRight" format="dimension" />
+        <attr name="common_startIconPaddingTop" format="dimension" />
+        <attr name="common_startIconPaddingBottom" format="dimension" />
+        <attr name="common_endIcon" format="reference" />
+        <attr name="common_endIconPadding" format="dimension" />
+        <attr name="common_endIconPaddingLeft" format="dimension" />
+        <attr name="common_endIconPaddingRight" format="dimension" />
+        <attr name="common_endIconPaddingTop" format="dimension" />
+        <attr name="common_endIconPaddingBottom" format="dimension" />
+
+        <attr name="common_mainText" format="string" />
+        <attr name="common_mainTextSize" format="dimension" />
+        <attr name="common_mainTextColor" format="reference|color" />
+
+        <attr name="common_descriptionPaddingLeft" format="dimension" />
+        <attr name="common_description" format="string" />
+        <attr name="common_descriptionHint" format="string" />
+        <attr name="common_descriptionEnabled" format="boolean" />
+        <attr name="common_descriptionGravity">
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+            <enum name="center" value="3" />
+        </attr>
+        <attr name="common_descriptionTextSize" format="dimension" />
+        <attr name="common_descriptionTextColor" format="reference|color" />
+
+        <attr name="common_descriptionIcon" format="reference" />
+
+        <attr name="common_bottomDescription" format="string" />
+        <attr name="common_bottomDescriptionGravity">
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+            <enum name="center" value="3" />
+        </attr>
+        <attr name="common_bottomDescriptionTextSize" format="dimension" />
+        <attr name="common_bottomDescriptionTextColor" format="reference|color" />
+        <attr name="common_bottomDescriptionPaddingLeft" format="dimension" />
+        <attr name="common_bottomDescriptionPaddingRight" format="dimension" />
+        <attr name="common_bottomDescriptionPaddingTop" format="dimension" />
+
+        <attr name="common_lineColor" format="color" />
+        <attr name="common_lineHeight" format="dimension" />
+        <attr name="common_lineMarginStart" format="dimension" />
+        <attr name="common_lineMarginEnd" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ShapeLinearLayout">
+        <!--填充颜色-->
+        <attr name="sll_fillColor" format="color" />
+        <!--点击填充颜色-->
+        <attr name="sll_pressedFillColor" format="color" />
+        <!--选中填充颜色-->
+        <attr name="sll_selectedFillColor" format="color" />
+        <!--描边颜色-->
+        <attr name="sll_strokeColor" format="color" />
+        <!--选中描边颜色-->
+        <attr name="sll_selectedStrokeColor" format="color" />
+        <!--描边宽度-->
+        <attr name="sll_strokeWidth" format="dimension" />
+        <!--选中描边宽度-->
+        <attr name="sll_selectedStrokeWidth" format="dimension" />
+        <!--圆角大小-->
+        <attr name="sll_cornerRadius" format="dimension" />
+        <!--圆角位置-->
+        <attr name="sll_cornerPosition">
+            <flag name="topLeft" value="1" />
+            <flag name="topRight" value="2" />
+            <flag name="bottomRight" value="4" />
+            <flag name="bottomLeft" value="8" />
+        </attr>
+        <!--渐变开始颜色-->
+        <attr name="sll_startColor" format="color" />
+        <!--渐变结束颜色-->
+        <attr name="sll_endColor" format="color" />
+        <!--渐变方向-->
+        <attr name="sll_orientation" format="enum">
+            <enum name="TOP_BOTTOM" value="0" />
+            <enum name="LEFT_RIGHT" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ShapeRelativeLayout">
+        <!--填充颜色-->
+        <attr name="srl_fillColor" format="color" />
+        <!--点击填充颜色-->
+        <attr name="srl_pressedFillColor" format="color" />
+        <!--描边颜色-->
+        <attr name="srl_strokeColor" format="color" />
+        <!--描边宽度-->
+        <attr name="srl_strokeWidth" format="dimension" />
+        <!--圆角大小-->
+        <attr name="srl_cornerRadius" format="dimension" />
+        <!--圆角位置-->
+        <attr name="srl_cornerPosition">
+            <flag name="topLeft" value="1" />
+            <flag name="topRight" value="2" />
+            <flag name="bottomRight" value="4" />
+            <flag name="bottomLeft" value="8" />
+        </attr>
+        <!--渐变开始颜色-->
+        <attr name="srl_startColor" format="color" />
+        <!--渐变结束颜色-->
+        <attr name="srl_endColor" format="color" />
+        <!--渐变方向-->
+        <attr name="srl_orientation" format="enum">
+            <enum name="TOP_BOTTOM" value="0" />
+            <enum name="LEFT_RIGHT" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="Common_ShapeTextView">
+        <!--填充颜色-->
+        <attr name="common_stv_fillColor" format="color" />>
+        <!--点击填充颜色-->
+        <attr name="common_stv_pressedFillColor" format="color" />
+        <!--选中填充颜色-->
+        <attr name="common_stv_selectedFillColor" format="color" />
+        <!--描边颜色-->
+        <attr name="common_stv_strokeColor" format="color" />
+        <!--点击描边颜色-->
+        <attr name="common_stv_pressedStrokeColor" format="color" />
+        <!--选中描边颜色-->
+        <attr name="common_stv_selectedStrokeColor" format="color" />
+        <!--描边宽度-->
+        <attr name="common_stv_strokeWidth" format="dimension" />
+        <!--点击描边宽度-->
+        <attr name="common_stv_pressedStrokeWidth" format="dimension" />
+        <!--选中描边宽度-->
+        <attr name="common_stv_selectedStrokeWidth" format="dimension" />
+        <!--圆角大小-->
+        <attr name="common_stv_cornerRadius" format="dimension" />
+        <!--圆角位置-->
+        <attr name="common_stv_cornerPosition">
+            <flag name="topLeft" value="1" />
+            <flag name="topRight" value="2" />
+            <flag name="bottomRight" value="4" />
+            <flag name="bottomLeft" value="8" />
+        </attr>
+        <!--渐变开始颜色-->
+        <attr name="common_stv_startColor" format="color" />
+        <!--渐变结束颜色-->
+        <attr name="common_stv_endColor" format="color" />
+        <!--渐变方向-->
+        <attr name="common_stv_orientation" format="enum">
+            <enum name="TOP_BOTTOM" value="0" />
+            <enum name="LEFT_RIGHT" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CommonEditText">
+        <!--填充颜色-->
+        <attr name="commonET_normalFillColor" format="color" />
+        <!--焦点填充颜色-->
+        <attr name="commonET_focusedFillColor" format="color" />
+        <!--不可编辑填充颜色-->
+        <attr name="commonET_notEnabledFillColor" format="color" />
+        <!--描边颜色-->
+        <attr name="commonET_strokeColor" format="color" />
+        <!--描边焦点颜色-->
+        <attr name="commonET_strokeFocusedColor" format="color" />
+        <!--描边不可编辑颜色-->
+        <attr name="commonET_strokeNotEnabledColor" format="color" />
+        <!--描边宽度-->
+        <attr name="commonET_strokeWidth" format="dimension" />
+        <!--圆角大小-->
+        <attr name="commonET_cornerRadius" format="dimension" />
+        <!--圆角位置-->
+        <attr name="commonET_cornerPosition">
+            <flag name="topLeft" value="1" />
+            <flag name="topRight" value="2" />
+            <flag name="bottomRight" value="4" />
+            <flag name="bottomLeft" value="8" />
+        </attr>
+        <!--渐变开始颜色-->
+        <attr name="commonET_startColor" format="color" />
+        <!--渐变结束颜色-->
+        <attr name="commonET_endColor" format="color" />
+        <!--渐变方向-->
+        <attr name="commonET_orientation" format="enum">
+            <enum name="TOP_BOTTOM" value="0" />
+            <enum name="LEFT_RIGHT" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="common_CircleImageLayout">
+        <attr name="commonCircleWidth" format="dimension" />
+        <attr name="commonLeftMargin" format="dimension" />
+        <attr name="commonShowMaxCount" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="common_NumEditText">
+        <!--小数点之前的长度限制-->
+        <attr name="digitsBeforeZero" format="integer" />
+        <!--小数点之后的长度限制-->
+        <attr name="digitsAfterZero" format="integer" />
+        <!--是否开启输入过滤器-->
+        <attr name="amountFilterEnable" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SecurityEditText">
+        <attr name="k_chooserSelectedColor" format="reference|color" />
+        <attr name="k_chooserUnselectedColor" format="reference|color" />
+        <attr name="k_chooserBackground" format="reference|color" />
+        <attr name="k_keyboardBackground" format="reference|color" />
+        <attr name="k_keyPreview" format="boolean" />
+        <attr name="k_isNumberRandom" format="boolean" />
+        <attr name="k_mode" format="integer">
+            <enum name="singleNumberMode" value="1" />
+            <enum name="singleSymbolMode" value="2" />
+            <enum name="singleLetterMode" value="3" />
+            <enum name="multiMode" value="4" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RippleBackground">
+        <attr name="rb_color" format="color" />
+        <attr name="rb_strokeWidth" format="dimension" />
+        <attr name="rb_radius" format="dimension" />
+        <attr name="rb_duration" format="integer" />
+        <attr name="rb_rippleAmount" format="float" />
+        <attr name="rb_scale" format="float" />
+        <attr name="rb_type" format="enum">
+            <enum name="fillRipple" value="0" />
+            <enum name="strokeRipple" value="1" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="EmptyStateView">
+        <attr name="empty_text" format="string" />
+        <attr name="empty_icon_id" format="reference" />
+        <attr name="empty_text_size" format="dimension" />
+        <attr name="empty_text_color" format="color" />
+        <attr name="btn_retry_text_color" format="color" />
+        <attr name="btn_retry_text_size" format="dimension" />
+        <attr name="btn_retry_text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="DiscussionAvatarView">
+        <!--头像的半径,dp为单位-->
+        <attr name="radius" format="reference|integer" />
+        <!--头像间的距离，为头像直径的长度的百分比，dp为单位-->
+        <attr name="space" format="reference|float" />
+        <!--最多显示多少个头像-->
+        <attr name="maxCount" format="reference|integer" />
+        <!--是否最后一个显示完全,默认是true-->
+        <attr name="isLastComplete" format="reference|boolean" />
+        <!--是否显示动画效果-->
+        <attr name="isShowAnimation" format="reference|boolean" />
+        <!--是否显示边框-->
+        <attr name="isShowFrame" format="reference|boolean" />
+        <!--边框颜色-->
+        <attr name="frameColor" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="CommonColorGradientTextView">
+        <attr name="startColor" format="color" />   <!--渐变开始颜色-->
+        <attr name="endColor" format="color" />   <!--渐变结束颜色-->
+    </declare-styleable>
+
+    <declare-styleable name="VerifyCodeEditText">
+        <attr name="codeLineColor" format="color"/>
+        <attr name="codeTextColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="ShimmerFrameLayout">
+        <attr name="shimmer_clip_to_children" format="boolean"/>
+        <attr name="shimmer_colored" format="boolean"/>
+        <attr name="shimmer_base_color" format="color"/>
+        <attr name="shimmer_highlight_color" format="color"/>
+        <attr name="shimmer_base_alpha" format="float"/>
+        <attr name="shimmer_highlight_alpha" format="float"/>
+        <attr name="shimmer_auto_start" format="boolean"/>
+        <attr name="shimmer_duration" format="integer"/>
+        <attr name="shimmer_repeat_count" format="integer"/>
+        <attr name="shimmer_repeat_delay" format="integer"/>
+        <attr name="shimmer_repeat_mode" format="enum">
+            <enum name="restart" value="1"/>
+            <enum name="reverse" value="2"/>
+        </attr>
+        <attr name="shimmer_start_delay" format="integer"/>
+        <attr name="shimmer_direction" format="enum">
+            <enum name="left_to_right" value="0"/>
+            <enum name="top_to_bottom" value="1"/>
+            <enum name="right_to_left" value="2"/>
+            <enum name="bottom_to_top" value="3"/>
+        </attr>
+        <attr name="shimmer_dropoff" format="float"/>
+        <attr name="shimmer_fixed_width" format="dimension"/>
+        <attr name="shimmer_fixed_height" format="dimension"/>
+        <attr name="shimmer_intensity" format="float"/>
+        <attr name="shimmer_width_ratio" format="float"/>
+        <attr name="shimmer_height_ratio" format="float"/>
+        <attr name="shimmer_shape" format="enum">
+            <enum name="linear" value="0"/>
+            <enum name="radial" value="1"/>
+        </attr>
+        <attr name="shimmer_tilt" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="GridColorSkeletonLayout">
+        <!--渐变方向-->
+        <attr name="sklayoutManager" format="enum">
+            <enum name="grid" value="0" />
+            <enum name="staggeredGrid" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="PwdEditText">
+      <attr name="frameGap" format="dimension"/>
+        <attr name="isCiphertext" format="boolean"/>
+        <attr name="pwdLength" format="integer"/>
+        <attr name="pwdFrameColor" format="color"/>
+    </declare-styleable>
+</resources>

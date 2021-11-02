@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_invitation_tips">快来和我一起玩谁信，我的谁信号是%s。寻找另一半，就在谁信，点击下载:http://home.imshuixin.com/download</string>
+    <string name="request_to_add_friend">请求添加你为好友</string>
+    <string name="ProhibitedAuthority">已禁止权限</string>
+    <string name="on_loading">正在加载...</string>
+    <string name="retry">重试</string>
+</resources>

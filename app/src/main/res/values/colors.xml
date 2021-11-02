@@ -1,67 +1,213 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="common_colorPrimary">#FFFFFF</color>
+    <color name="common_colorPrimaryDark">#FFFFFF</color>
+    <color name="common_colorAccent">@color/common_main_color</color>
+
+    <!-- app主蓝颜色 -->
+    <color name="common_main_blue_color">@color/common_blue_1380E6</color>
+    <!-- app主颜色 -->
+    <color name="common_main_color">@color/common_green_00C186</color>
+    <!-- app disable主颜色 -->
+    <color name="common_main_disable_color">@color/common_green_80E4AC</color>
+    <!-- app第二主颜色 -->
+    <color name="common_second_color">@color/common_green_45D590</color>
+    <!-- app文本主颜色 -->
+    <color name="common_main_text_color">@color/black</color>
+    <!-- app第二文本颜色 -->
+    <color name="common_second_text_color">@color/common_gray_93</color>
+    <!-- app第二文本颜色 -->
+    <color name="common_sub_text_color">@color/common_gray_66</color>
+
+    <color name="common_gray_bbbbbb">#bbbbbb</color>
+    <color name="common_gray_f9f9f9">#f9f9f9</color>
+    <color name="common_gray_E7E7F0">#E7E7F0</color>
+    <color name="common_gray_e2">#E2E2E2</color>
+    <color name="common_gray_ee">#EEEEEE</color>
+    <color name="common_gray_d8">#D8D8D8</color>
+    <color name="common_gray_88">#888888</color>
+    <color name="common_gray_93">#939393</color>
+    <color name="common_gray_99">#999999</color>
+    <color name="common_gray_dd">#DDDDDD</color>
+    <color name="common_gray_af">#AFAFAF</color>
+    <color name="common_gray_c6">#C6C6C6</color>
+    <color name="common_gray_97">#979797</color>
+    <color name="common_gray_97_a19">#30979797</color>
+    <color name="common_gray_b3">#b3b3b3</color>
+    <color name="common_gray_b5">#B5B5B5</color>
+    <color name="common_gray_b0">#B0B0B0</color>
+    <color name="common_gray_f7f6fb">#f7f6fb</color>
+
+    <color name="common_black_222121">#222121</color>
+    <color name="common_black_0c">#0C0C0C</color>
+    <color name="common_black_3d">#FF3D3D3D</color>
+    <color name="common_white_f5">#F5F5F5</color>
+    <color name="common_white_f3">#f3f3f3</color>
+    <color name="common_white_e4">#E4E4E4</color>
+    <color name="common_white_fc">#FCFCFC</color>
+    <color name="common_gray_f1">#F1F1F1</color>
+    <color name="common_gray_f2">#F2F2F2</color>
+    <color name="common_gray_f9">#F9F9F9</color>
+    <color name="common_gray_66">#666666</color>
+    <color name="common_gray_E2E2E5">#E2E2E5</color>
+    <color name="common_gray_aa">#AAAAAA</color>
+    <color name="common_gray_bb">#BBBBBB</color>
+    <color name="common_gray_cc">#CCCCCC</color>
+    <color name="common_black_33">#333333</color>
+    <color name="common_black_22">#222222</color>
+    <color name="common_black_a50">#80000000</color>
+    <color name="common_black_3f">#3F3F3F</color>
+    <color name="common_gray_9697A6">#9697A6</color>
+    <color name="common_white_F9F9F9">#F9F9F9</color>
+    <color name="common_white_FDFDFD">#FDFDFD</color>
+    <color name="common_white_F0F0F0">#F0F0F0</color>
+    <color name="common_white_99000000">#99000000</color>
+    <color name="common_white_99ffffff">#99ffffff</color>
+    <color name="common_white_F9F9F9_82">#D1FFFFFF</color>
+    <color name="common_white_D7D7D7">#D7D7D7</color>
+    <color name="common_white_253B2E">#253B2E</color>
+    <color name="common_white_66">#66ffffff</color>
+
+    <color name="common_black_1A">#1A000000</color>
+    <color name="common_black_15">#1A000000</color>
+    <color name="common_black_85">#d8000000</color>
+    <color name="common_black_10">#0D000000</color>
+    <color name="common_shadow_15">#26253B2E</color>
+    <color name="common_shadow_16B282_15">#2016B282</color>
+    <color name="wallet_green">#00C186</color>
+    <color name="wallet_yellow">#FF9600</color>
+    <color name="green_008D61">#008D61</color>
+    <color name="red_FFFF3824">#FFFF3824</color>
+    <color name="common_red_FB3E44">#FB3E44</color>
+    <color name="common_red_FA5151">#FA5151</color>
+    <color name="gray_FFE4E4E4">#FFE4E4E4</color>
+    <color name="common_gray_F7F8FA">#F7F8FA</color>
+    <color name="common_gray_DBDBDB">#DBDBDB</color>
+    <color name="common_gray_7A7A7A">#FF7A7A7A</color>
+    <color name="common_gray_FAFBFB">#FAFBFB</color>
+    <color name="common_gray_e6e6e6">#E6E6E6</color>
+    <color name="common_gray_EAE7E7">#EAE7E7</color>
+    <color name="common_gray_F5F6F8">#F5F6F8</color>
+    <color name="common_white_30">#3dffffff</color>
+
+    <color name="common_black_0C0C0C">#ff0C0C0C</color>
+    <color name="common_gray_B2B5B6">#ffB2B5B6</color>
+    <color name="common_gray_878787">#878787</color>
+
+    <color name="common_blue_366AF2">#366AF2</color>
+    <color name="common_blue_0091FF">#0091FF</color>
+    <color name="common_blue_60E4FF">#60E4FF</color>
+    <color name="common_blue_1380E6">#1380E6</color>
+    <color name="common_blue_4A5482">#4A5482</color>
+    <color name="common_blue_3478F6">#3478F6</color>
+    <color name="common_blue_4475FF">#4475FF</color>
+
+    <color name="common_yellow_FCCB50">#FCCB50</color>
+    <color name="common_yellow_D7BF97">#D7BF97</color>
+    <color name="common_golden_DBA346">#DBA346</color>
+    <color name="common_golder_C9A66C">#C9A66C</color>
+    <color name="common_golder_FFF5E6">#FFF5E6</color>
+    <color name="common_yellow_F66C4B">#F66C4B</color>
+    <color name="common_gray_C9C9C9">#C9C9C9</color>
+    <color name="common_gray_d0ddd9">#d0ddd9</color>
+    <color name="common_green_48B962">#48B962</color>
+    <color name="common_red_e02020">#e02020</color>
+    <color name="common_gray_888888">#888888</color>
 
 
-    <color name="colorTheme">#ffce3d3a</color>
+    <color name="common_green_00C858">#00C858</color>
+    <color name="common_green_00C184">#00C184</color>
+    <color name="common_green_80E4AC">#80E4AC</color>
+    <color name="common_green_45D590">#45D590</color>
+    <color name="common_green_68E09D">#68E09D</color>
+    <color name="common_green_3F56DA96">#3F56DA96</color>
+    <color name="common_green_5ADC98">#5ADC98</color>
+    <color name="common_green_00C186">#00C186</color>
+    <color name="common_green_00C186_30">#4D00C186</color>
+    <color name="common_green_FF008D61">#FF008D61</color>
+    <color name="common_green_08B96E">#08B96E</color>
+    <color name="common_green_4c00C186">#4c00C186</color>
+    <color name="common_green_00C186_40">#6600C186</color>
+    <color name="common_green_03A674">#03A674</color>
+    <color name="common_red_E02020">#E02020</color>
+    <color name="common_yellow_F7B500">#F7B500</color>
+    <color name="common_yellow_B07315">#B07315</color>
 
-    <color name="colorWhite">#ffffffff</color>
+    <color name="common_yellow_F69A23">#FFF69A23</color>
+    <color name="common_red_FF3B30">#FFFF3B30</color>
+    <color name="common_red_FF3824">#FF3824</color>
+    <color name="comm_red_FF2D55">#FFFF2D55</color>
+    <color name="common_red_FF5D5D">#FF5D5D</color>
+    <color name="common_red_FF8383">#FF8383</color>
+    <color name="coomon_red_FF7171">#FF7171</color>
+    <color name="coomon_red_33ff8ebf">#33ff8ebf</color>
+    <color name="coomon_red_ff8ebf">#FF8EBF</color>
 
-    <!--分割线-->
-    <color name="colorLine">#EBEBEB</color>
-    <!--首页分割线-->
-    <color name="colorHomeLine">#D4D4D4</color>
-    <!--页面背景的颜色-->
-    <color name="color_page_bg">#F1F3F4</color>
-    <!--侧边栏分割线-->
-    <color name="colorNavLine">#E0E0E0</color>
-    <!--导航数据侧边栏背景色-->
-    <color name="colorNaviBg">#80ffffff</color>
+    <color name="common_red_dialog_bg">#99FFFFFF</color>
+    <color name="common_gray_70">#707070</color>
+    <color name="common_gray_e8">#e8e8e8</color>
+    <color name="common_gray_f9f9fd">#f9f9fd</color>
+    <color name="common_gray_de">#dedede</color>
+    <color name="common_yellow_FF9D1F">#FF9D1F</color>
 
-    <!--tab标签栏文字的颜色-->
-    <color name="colorTabText">#585858</color>
-    <!--正文文字颜色-->
-    <color name="colorContent">#ff333333</color>
-    <!--水波纹或5.0以下选择器颜色-->
-    <color name="tabBackground">#777D7D7D</color>
-    <!--item的水波纹颜色-->
-    <color name="itemBackground">#DD7D7D7D</color>
-    <!--item的5.0一下版本选择器颜色-->
-    <color name="itemLowBackground">#d9d9d9</color>
+    <color name="common_black_111111">#111111</color>
+    <color name="common_black_80333333">#80333333</color>
+    <color name="common_black_26FFFFFF">#26FFFFFF</color>
+    <color name="common_black_33FFFFFF">#33FFFFFF</color>
 
-    <!--透明色-->
-    <color name="colorTransparent">#00000000</color>
-    <!--半透明-->
-    <color name="colorBanTransparent">#11000000</color>
-    <!--首页item文字颜色-->
-    <color name="colorSubtitle">#999</color>
+    <color name="common_black_33000000">#33000000</color>
 
-    <color name="colorTitle">#666</color>
-    <!--谈红色  用于首页调整点击变色-->
-    <color name="colorSmallRed">#faebeb</color>
+    <color name="common_blue_37C6FF">#37C6FF</color>
+    <color name="common_blue_3344B9FF">#3344B9FF</color>
+    <color name="common_blue_44B9FF">#44B9FF</color>
 
-    <!--电影评分-->
-    <color name="colorRateRed">#FB5B81</color>
+    <color name="common_black_424458">#424458</color>
 
-    <!--没有水波纹效果的颜色选择器-->
-    <color name="colorItemBackground">#d9d9d9</color>
+    <color name="common_group_FF9600">#FF9600</color>
 
-    <!--选择分类按下颜色-->
-    <color name="colorChoosePress">#DDD</color>
+    
+    <color name="common_group_male_start_color">#3CADFF</color>
+    <color name="common_group_male_end_color">#68DBFF</color>
 
-    <!--暂时用于反馈文字-->
-    <color name="text_common">#191919</color>
+    <color name="common_group_female_start_color">#FF7193</color>
+    <color name="common_group_female_end_color">#FF8CD1</color>
 
-    <color name="text_deed_bg">#f6f6f6</color>
-    <!--dialog的查看详情键-->
-    <color name="colorBtDialog">#38659C</color>
+    <color name="common_group_00_start_color">#54E073</color>
+    <color name="common_group_00_end_color">#A3F595</color>
+
+    <color name="common_group_90_start_color">#22DDD2</color>
+    <color name="common_group_90_end_color">#64F2B6</color>
+
+    <color name="common_group_80_start_color">#28C2F3</color>
+    <color name="common_group_80_end_color">#53E2DA</color>
 
 
-    <!--主页tab背景-->
-    <color name="colorTabBg">#ffffffff</color>
-    <color name="colorTabTextCheck">#ffce3d3a</color>
-    <color name="colorTabTextNormal">#585858</color>
-    <color name="colorTabLine">#ffce3d3a</color>
+    <color name="c_C29B82">#C29B82</color>
+    <color name="c_EADDD3">#EADDD3</color>
+    <color name="c_FDF1E7">#FDF1E7</color>
+    <color name="c_D7BFAC">#D7BFAC</color>
+    <color name="c_B7B7A6">#B7B7A6</color>
+    <color name="c_A5A58F">#A5A58F</color>
+    <color name="c_F3ECE6">#F3ECE6</color>
+    <color name="c_71B0F8">#71B0F8</color>
+    <color name="c_D4CACC">#D4CACC</color>
+    <color name="c_D9E4DA">#D9E4DA</color>
+    <color name="c_F0A9AC">#F0A9AC</color>
+    <color name="c_DDDDCF">#DDDDCF</color>
+    <array name="color_skeleton">
+        <item>@color/c_C29B82</item>
+        <item>@color/c_EADDD3</item>
+        <item>@color/c_FDF1E7</item>
+        <item>@color/c_D7BFAC</item>
+        <item>@color/c_B7B7A6</item>
+        <item>@color/c_A5A58F</item>
+        <item>@color/c_F3ECE6</item>
+        <item>@color/c_71B0F8</item>
+        <item>@color/c_D4CACC</item>
+        <item>@color/c_D9E4DA</item>
+        <item>@color/c_F0A9AC</item>
+        <item>@color/c_DDDDCF</item>
+    </array>
+
+
 </resources>

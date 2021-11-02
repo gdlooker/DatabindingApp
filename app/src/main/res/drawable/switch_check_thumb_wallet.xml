@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 阴影部分 -->
+    <!-- 个人觉得更形象的表达：top代表下边的阴影高度，left代表右边的阴影宽度。其实也就是相对应的offset，solid中的颜色是阴影的颜色，也可以设置角度等等 -->
+    <item
+        android:left="1dp"
+        android:top="1dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white" />
+            <corners
+                android:bottomLeftRadius="12dp"
+                android:bottomRightRadius="12dp"
+                android:topLeftRadius="12dp"
+                android:topRightRadius="12dp" />
+        </shape>
+    </item>
+    <item
+        android:left="1dp"
+        android:top="1dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="90"
+                android:endColor="#4D00C186"
+                android:startColor="#CC005F29" />
+            <corners
+                android:bottomLeftRadius="12dp"
+                android:bottomRightRadius="12dp"
+                android:topLeftRadius="12dp"
+                android:topRightRadius="12dp" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <!--高度-->
+            <size
+                android:width="24dp"
+                android:height="24dp" />
+            <!--圆角弧度-->
+            <corners android:radius="12dp" />
+            <!--变化率-->
+            <gradient
+                android:endColor="@color/common_colorPrimary"
+                android:startColor="@color/common_colorPrimary" />
+            <stroke
+                android:width="2dp"
+                android:color="#00FFFFFF" />
+        </shape>
+    </item>
+</layer-list>

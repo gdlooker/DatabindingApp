@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <declare-styleable name="PageIndicator" tools:ignore="ResourceName">
+        <attr name="indicatorWidth" format="dimension" />
+        <attr name="indicatorHeight" format="dimension" />
+        <attr name="drawModel" format="integer" />
+        <attr name="normalColor" format="color" />
+        <attr name="selectColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="DotPageIndicator" tools:ignore="ResourceName"></declare-styleable>
+
+    <declare-styleable name="common_LinePageIndicator">
+        <attr name="common_round" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="DrawablePageIndicator" tools:ignore="ResourceName">
+        <attr name="normal" format="reference" />
+        <attr name="select" format="reference" />
+    </declare-styleable>
+</resources>

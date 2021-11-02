@@ -1,3 +1,114 @@
 <resources>
-    <string name="app_name">DataBindingDemo</string>
+
+    <!-- 广场 -->
+    <string name="plaza_circle_content_expand_text">展开</string>
+    <string name="plaza_circle_content_collapse_text">收起</string>
+    <string name="plaza_video_content_expand_text">全文</string>
+    <string name="plaza_video_content_collapse_text">收起</string>
+    <string name="plaza_comment_hint">请输入内容…</string>
+    <string name="plaza_comment_fill_report_type_reason_tips">请将投诉类型，具体原因填写完整</string>
+    <string name="plaza_comment_fill_report_type_tips">请选择投诉类型</string>
+    <string name="plaza_comment_fill_report_reason">请选择具体原因</string>
+    <string name="plaza_close_comment_hint">作者已关闭了评论，暂不能评论哦~</string>
+    <string name="plaza_circle_share_to">分享给：</string>
+    <string name="plaze_circle_share_at">分享至</string>
+    <string name="plaze_circle_post_succeess">已收到反馈</string>
+    <string name="plaza_nearby_channel">同城</string>
+    <string name="plaza_scroll_select">滑动白框选择封面</string>
+
+    <!--    登录-验证码-->
+    <string name="login_verifycode_input_verifyCode">输入6位验证码</string>
+    <string name="login_verifycode_input_send">已发送到：+86 13900000008</string>
+    <string name="login_verifycode_input_recall">重新获取</string>
+    <string name="login_verifycode_recall_success">重新发送验证码成功</string>
+    <string name="login_verifycode_cancel">取消</string>
+    <string name="login_verifycode_tel_is_null">手机号为空</string>
+    <string name="login_verifycode_desc_is_null">区号为空</string>
+    <string name="login_verifycode_user_info_receive_fail">用户信息获取失败</string>
+    <string name="login_verifycode_verify_code_fail">校验验证码失败</string>
+    <string name="login_verifycode_select_one_account_to_login">请选择一个账号登录</string>
+    <string name="login_verifycode_login_fail">登录失败</string>
+    <string name="login_verifycode_verify_fail_try_again">校验验证码失败，请稍后再试！</string>
+
+    <string name="app_name">DataBindingApp</string>
+    <string name="app_name_shuixin">谁信</string>
+    <string name="detect_no_face">未检测到人脸</string>
+    <string name="detect_face_in">把脸移入框内</string>
+    <string name="detect_zoom_in">手机拿近一点</string>
+    <string name="detect_zoom_out">手机拿远一点</string>
+    <string name="detect_head_up">建议略微抬头</string>
+    <string name="detect_head_down">建议略微低头</string>
+    <string name="detect_head_left">建议略微向左转头</string>
+    <string name="detect_head_right">建议略微向右转头</string>
+    <string name="detect_occ_face">脸部有遮挡</string>
+    <string name="detect_low_light">光线再亮些</string>
+    <string name="detect_keep">请保持不动</string>
+    <string name="detect_standard">请正对手机</string>
+    <string name="detect_timeout">检测超时</string>
+    <string name="liveness_eye">眨眨眼</string>
+    <string name="liveness_eye_left">请眨眨左边眼睛</string>
+    <string name="liveness_eye_right">请眨眨右边眼睛</string>
+    <string name="liveness_mouth">张张嘴</string>
+    <string name="liveness_head_left">向左缓慢转头</string>
+    <string name="liveness_head_right">向右缓慢转头</string>
+    <string name="liveness_head_left_right">摇摇头</string>
+    <string name="liveness_head_up">缓慢抬头</string>
+    <string name="liveness_head_down">缓慢低头</string>
+    <string name="liveness_good">非常好</string>
+    <string name="face_user_live_tips">为保障你的账户安全，本次登录需要人脸验证确保本人登录</string>
+
+    <string name="req_net_buzy_error">当前无网络连接，请稍后再试</string>
+    <string name="req_timeout_error">网络超时，请稍后再试</string>
+    <string name="req_parse_error">数据解析异常，请稍后再试</string>
+    <string name="req_io_error">IO异常，请稍后再试</string>
+    <string name="req_unknown_error">未知异常，请稍后再试</string>
+    <string name="server_unknown_error">服务器异常，请稍后再试</string>
+    <string name="common_invitation_tips">快来和我一起玩谁信，我的谁信号是%s。寻找另一半，就在谁信，点击下载:http://home.imshuixin.com/download</string>
+
+    <string name="aToz">abcdefghijklmnopqrstuvwxyz</string>
+    <string name="zeroToNine">1234567890</string>
+    <string name="title_letter">字母</string>
+    <string name="title_symbol">符号</string>
+    <string name="title_number">数字</string>
+    <string name="exception_invalid_keyboard">无效的键盘类型</string>
+    <string name="request_to_add_friend">请求添加你为好友</string>
+    <string name="ProhibitedAuthority">已禁止权限</string>
+    <string name="on_loading">正在加载...</string>
+    <string name="retry">重试</string>
+    <string name="phone_may_not_be_around_tips">对方手机可能不在身边，建议稍后再次尝试</string>
+
+    <string name="brvah_loading">正在加载中...</string>
+    <string name="brvah_load_failed">加载失败，请点我重试</string>
+    <string name="brvah_load_end">没有更多数据</string>
+    <string name="brvah_load_complete">点击加载更多</string>
+
+
+    <string name="just_now">刚刚</string>
+    <string name="just_min_ago">%s分钟前</string>
+    <string name="just_hour_ago">%s小时前</string>
+    <string name="yesterday">昨天</string>
+    <string name="before_yesterday">前天</string>
+    <string name="before_days_ago">%s天前</string>
+    <string name="sunday">星期日</string>
+    <string name="monday">星期一</string>
+    <string name="tuesday">星期二</string>
+    <string name="wednesday">星期三</string>
+    <string name="thursday">星期四</string>
+    <string name="friday">星期五</string>
+    <string name="saturday">星期六</string>
+
+    <string name="invite_video_tips">邀请您进行视频通话</string>
+    <string name="invite_audio_tips">邀请您进行语音通话</string>
+    <string name="you_received_a_message">您收到一条谁信消息</string>
+
+
+    <string name="burn_none">关闭</string>
+    <string name="burn_now">即刻焚烧</string>
+    <string name="burn_second_10">10秒</string>
+    <string name="burn_minute_5">5分钟</string>
+    <string name="burn_hour_1">1小时</string>
+    <string name="burn_hour_24">24小时</string>
+
+    <string name="burn_msg">即焚消息</string>
+
 </resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <dimen name="common_width_send_message_progressBar">16dp</dimen>
+    <dimen name="common_height_send_message_progressBar">16dp</dimen>
+    <dimen name="common_width_send_message_failView">26dp</dimen>
+    <dimen name="common_height_send_message_failView">26dp</dimen>
+    <dimen name="common_chat_msg_error_icon_size">20dp</dimen>
+    <dimen name="common_receive_name_marginBottom">3dp</dimen>
+    <dimen name="common_send_name_marginBottom">3dp</dimen>
+    <dimen name="common_item_bottom_space">9dp</dimen>
+    <dimen name="common_tip_item_bottom_space">6dp</dimen>
+    <!--文件消息没有焚烧，距离底部16dp-->
+    <dimen name="common_item_bottom_space_file">16dp</dimen>
+    <dimen name="common_content_top_space_to_time">9dp</dimen>
+    <dimen name="common_key_height">48dp</dimen>
+    <dimen name="common_key_height_land">40dp</dimen>
+    <dimen name="common_state_bar_height">30dp</dimen>
+    <dimen name="common_name_top_space_to_time">4dp</dimen>
+
+    <!-- app主按钮高度-->
+    <dimen name="common_main_button_height">44dp</dimen>
+    <!-- app主按钮圆角-->
+    <dimen name="common_main_button_radius">22dp</dimen>
+    <!--    大按钮宽度-->
+    <dimen name="common_big_button_width">343dp</dimen>
+
+
+    <!-- 聊天界面头像宽度-->
+    <dimen name="common_chat_msg_head_icon_width">40dp</dimen>
+    <!-- 聊天界面头像高度-->
+    <dimen name="common_chat_msg_head_icon_height">40dp</dimen>
+    <!-- 聊天界面头像距左边距离-->
+    <dimen name="common_chat_msg_head_margin_start">12dp</dimen>
+    <!-- 聊天界面头像距右边距离-->
+    <dimen name="common_chat_msg_head_margin_end">12dp</dimen>
+    <!-- 聊天界面内容局头像的距离-->
+    <dimen name="common_chat_content_margin_start">12dp</dimen>
+
+
+    <dimen name="common_name_head_offset">5dp</dimen>
+
+    <dimen name="create_chat_group_item_margin_start_one">16dp</dimen>
+    <dimen name="create_chat_group_item_margin_start_two">12dp</dimen>
+
+    <dimen name="def_height">50dp</dimen>
+
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+
+    <dimen name="sp_14">14sp</dimen>
+
+    <dimen name="sw_1dp">0.52dp</dimen>
+</resources>
