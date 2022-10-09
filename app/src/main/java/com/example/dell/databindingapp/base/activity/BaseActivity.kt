@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
 import android.widget.RelativeLayout
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
@@ -14,11 +15,12 @@ import androidx.databinding.ViewDataBinding
  * Date:2019/3/7
  * Description:
  */
-open abstract class BaseActivity<T: ViewDataBinding>(): AppCompatActivity() {
+abstract class BaseActivity<T: ViewDataBinding> : AppCompatActivity() {
 
     protected var bindingView:T?=null
     var baseView: View?=null
-
+    //titleBar
+    protected var baseTitle:TextView?=null;
     // 内容布局
     protected var mContainer: RelativeLayout?=null
 
@@ -28,9 +30,10 @@ open abstract class BaseActivity<T: ViewDataBinding>(): AppCompatActivity() {
         setContentView(baseView)  //设置基类的布局
         bindingView = DataBindingUtil.inflate(layoutInflater, getLayoutId(), baseView as ViewGroup?, false)  //使用databinding获取子类布局
 
-        var params: RelativeLayout.LayoutParams= RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.MATCH_PARENT)
+        val params: RelativeLayout.LayoutParams= RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.MATCH_PARENT)
         bindingView?.getRoot()?.layoutParams=params
         mContainer=baseView?.findViewById(R.id.container) //获取父类的RelativieLayout布局
+        baseTitle = baseView?.findViewById(R.id.base_title)
         mContainer?.addView(bindingView?.getRoot())
         initData() //初始化数据
     }

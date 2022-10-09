@@ -8,14 +8,13 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/base_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="我是BaseActivity的公共区域"
+            android:text="@string/chat_title"
             android:gravity="center"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
-            android:background="@color/colorAccent"
-            android:textColor="@android:color/white"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
             />
 
         <!--有可能直接显示（固定的布局，非必须，按需要添加）-->

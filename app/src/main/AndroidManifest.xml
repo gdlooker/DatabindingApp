@@ -18,8 +18,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.dell.databindingapp.ui.activity.SecondActivity" />
-        <activity android:name="com.example.dell.databindingapp.ui.activity.ThreeActivity"></activity>
     </application>
 
 </manifest>

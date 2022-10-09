@@ -1,5 +1,8 @@
 <resources>
 
+
+    <string name="main_chat">聊天</string>
+
     <!-- 广场 -->
     <string name="plaza_circle_content_expand_text">展开</string>
     <string name="plaza_circle_content_collapse_text">收起</string>
@@ -110,5 +113,9 @@
     <string name="burn_hour_24">24小时</string>
 
     <string name="burn_msg">即焚消息</string>
+    <string name="main_contact">通讯录</string>
+    <string name="home_title">首页</string>
+    <string name="chat_title">聊天</string>
+    <string name="contact_title">通讯录</string>
 
 </resources>

@@ -1,21 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
-
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
      <data>
 
      </data>
 
-     <LinearLayout
+     <androidx.constraintlayout.widget.ConstraintLayout
          android:layout_width="match_parent"
          android:layout_height="match_parent"
-         android:orientation="vertical"
+         android:background="@android:color/white"
          >
-
-          <TextView
-              android:id="@+id/tv_start"
+          <com.example.dell.databindingapp.widget.NoScrollViewPager
+              android:id="@+id/view_pager"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:text="我是MainActivity点击跳转到SecondActivity"
               />
-     </LinearLayout>
+
+          <LinearLayout
+
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              tools:context=".ui.activity.MainActivity"
+              tools:ignore="MissingConstraints"
+              app:layout_constraintBottom_toBottomOf="parent"
+              android:orientation="horizontal">
+
+               <LinearLayout
+                   android:id="@+id/ll_chat"
+                   android:layout_width="0dp"
+                   android:layout_height="@dimen/dp_40"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:orientation="vertical"
+                   >
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/ic_home_chat_uncheck"
+                        tools:ignore="MissingConstraints"  />
+                    <TextView
+                        android:id="@+id/tv_chat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="@string/main_chat"
+                        android:gravity="bottom"
+                        android:textColor="@color/common_black_33"
+                        android:textSize="10sp"
+                        tools:ignore="MissingConstraints"
+                        />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/ll_contact"
+                   android:layout_width="0dp"
+                   android:layout_height="@dimen/dp_40"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:orientation="vertical"
+                   >
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/ic_home_chat_uncheck"
+                         />
+                    <TextView
+                        android:id="@+id/tv_contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="@string/main_contact"
+                        android:gravity="bottom"
+                        android:textColor="@color/common_black_33"
+                        android:textSize="10sp"
+
+                        />
+               </LinearLayout>
+          </LinearLayout>
+
+     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

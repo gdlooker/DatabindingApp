@@ -3,13 +3,14 @@
 buildscript {
     ext.kotlin_version = '1.5.20'
     repositories {
-        maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }
-        maven { url 'https://maven.aliyun.com/nexus/content/repositories/jcenter' }
-        maven { url 'https://maven.aliyun.com/nexus/content/repositories/google' }
-        maven { url 'https://maven.aliyun.com/nexus/content/repositories/gradle-plugin' }
-        maven { url 'https://jitpack.io' }
-        google()
+        jcenter{url "https://maven.aliyun.com/repository/public"}
+        google{url "https://maven.aliyun.com/repository/google"}
+        maven {url "http://maven.aliyun.com/repository/central"}
+        //Google 宣布停止 JCenter 使用 引起的这个问题。 同时造成这 几个地址的不稳定： https://dl.bintray.com https://jcenter.bintray.com https://status.bintray.com
+        maven { url 'status.bintray.com/kotlin/kotlin-eap' }
+        maven { url 'http://www.idescout.com/maven/repo/' }
         mavenCentral()
+        maven { url 'https://jitpack.io' }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.1'
@@ -25,12 +26,14 @@ buildscript {
 
 allprojects {
     repositories {
-        maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }
-        maven { url 'https://maven.aliyun.com/nexus/content/repositories/jcenter' }
-        maven { url 'https://maven.aliyun.com/nexus/content/repositories/google' }
-        maven { url 'https://maven.aliyun.com/nexus/content/repositories/gradle-plugin' }
-        google()
+        jcenter{url "https://maven.aliyun.com/repository/public"}
+        google{url "https://maven.aliyun.com/repository/google"}
+        maven {url "http://maven.aliyun.com/repository/central"}
+        //Google 宣布停止 JCenter 使用 引起的这个问题。 同时造成这 几个地址的不稳定： https://dl.bintray.com https://jcenter.bintray.com https://status.bintray.com
+        maven { url 'status.bintray.com/kotlin/kotlin-eap' }
+        maven { url 'http://www.idescout.com/maven/repo/' }
         mavenCentral()
+        maven { url 'https://jitpack.io' }
     }
 }
 
